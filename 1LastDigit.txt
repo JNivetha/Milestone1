@@ -1,0 +1,26 @@
+import java.util.*;
+public class Ex1 {
+	public boolean LastDigit(int a,int b)
+	{
+		int LastDigit1=a%10;
+		int LastDigit2=b%10;
+		if(LastDigit1==LastDigit2)
+		{
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		Ex1 x=new Ex1();
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		System.out.println(x.LastDigit(a, b));
+		
+		
+	}
+
+}
