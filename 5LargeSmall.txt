@@ -1,0 +1,12 @@
+import java.util.Arrays;
+
+public class LargeSmall {
+
+	public static void main(String[] args) {
+		int a[]= {11,100,96,55,25};
+		Arrays.sort(a);
+		System.out.println("the two smallest element in the array is "+a[0]+ " and " +a[1]);
+		System.out.println("the two largest element in the array is "+a[a.length-1]+ " and " +a[a.length-2]);
+		}
+
+}

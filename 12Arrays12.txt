@@ -1,0 +1,35 @@
+
+public class Arrays12 {
+
+	public static void main(String[] args) {
+		int a[]= {1,2,3};
+		int a1[]= {4,5,6};
+		int res[]=middleWay(a,a1);
+		for(int i=0;i<res.length;i++)
+		{
+			System.out.print(res[i]+" ");
+		}
+		
+		
+
+	}
+	public static int[] middleWay(int a[],int a1[])
+	{
+		int index=0,index1=0;
+		int len1=a.length;
+		int len2=a1.length;
+		int[] temp=new int[2];
+		int j=0;
+		if(a.length==3&&a1.length==3)
+		{
+			index=(a.length/2);
+			temp[j]=a[index];
+			index1=(a1.length/2);
+			temp[j+1]=a1[index];
+		}
+		
+		return temp;
+		
+	}
+
+}

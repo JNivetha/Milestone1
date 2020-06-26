@@ -1,0 +1,58 @@
+
+public class Between6and7 {
+
+	public static void main(String[] args) {
+		int a[]= {10,3,6,1,2,7,9};
+		int sum=0,res=0;
+		int s=0,t=0;
+		for(int i=0;i<a.length;i++)
+		{
+			if(a[i]==6)
+			{
+				 s=i;
+			}
+			else if(a[i]==7)
+			{
+			    t=i;
+			}
+			
+		}
+		if(s<t)
+		{
+			for(int i=0;i<a.length;i++)
+		{
+		if(a[i]==6)
+		{
+			for(int x=i+1;x<a.length;x++)
+			{
+				if(a[x]==7)
+				{
+					i=x+1;
+					for(int z=x+1;z<a.length;z++)
+					{
+						res=res+a[z];
+					}
+				}
+				
+			}
+		}
+		else {
+			sum=sum+a[i];
+		}
+		}
+			
+		}
+		else{
+			for(int i=0;i<a.length;i++)
+			{
+				sum=sum+a[i];
+			}
+			
+		}
+				
+		
+		System.out.println(sum+res);
+
+	}
+
+}
